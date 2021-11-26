@@ -66,7 +66,7 @@ function off(){
         <input type="radio" name="chooseCookie" value="off">Off
         <br/><br/><input type="submit" value="Envoyer">
         <br/><br/><br/>
-        <form action="172.16.126.16/cookie"><input type="submit" value="Aller sur la page JS"></form>
+        <form action="/"><input type="submit" value="Aller sur la page JS"></form>
         </form>
     </body>
 </html>
