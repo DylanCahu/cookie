@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="cours.css">
+        <script>
+            function on(){
+                document.cookie = 'user=Pierre'; //Crée ou met à jour un cookie 'user'
+            }
+            function show(){
+                alert(document.cookie); //Affiche la liste des cookies
+            }
+        </script>
+
+    </head>
+    
+    <body>
+        <h1>Poste de Dylan++</h1>
+        <hr>
+        <button onclick="on()">Créer</button>
+        <button onclick="show()">Montrer</button>
+        <form action="php.php"><input type="submit" value="Aller sur la page php"></form>
+    </body>
+</html>
+
