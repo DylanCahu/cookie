@@ -10,6 +10,10 @@
                 document.cookie = 'creator=Dylan++'; 
                 cpt ++;
             }
+            function off(){
+                document.cookie = ''; 
+                cpt ++;
+            }
             function show(){
                 alert(document.cookie); 
             }
@@ -29,6 +33,7 @@
         <h1>Poste de Dylan++</h1>
         <hr>
         <button onclick="on()">Créer</button>
+        <button onclick="off()">Suppr</button>
         <button onclick="show()">Montrer</button>
         <form action="php.php"><input type="submit" value="Aller sur la page php"></form>
     </body>
