@@ -5,12 +5,22 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="cours.css">
         <script>
+            
             function on(){
-                document.cookie = 'user=Pierre'; //Crée ou met à jour un cookie 'user'
+                document.cookie = 'creator=Dylan++'; 
+                cpt ++;
             }
             function show(){
-                alert(document.cookie); //Affiche la liste des cookies
+                alert(document.cookie); 
             }
+
+
+            var cpt;
+            cpt = count(document.cookie);
+
+            //let Edou=document.getElementById("EdouardSnowden");
+            //Edou.innerText = cpt;
+            
         </script>
 
     </head>

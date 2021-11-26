@@ -1,59 +1,72 @@
 <?php
 
-switch ($_GET['chooseCookie']) {
-    case 'on':
-        # code...
-        break;
+if(isset($_GET['chooseCookie'])){
+    switch ($_GET['chooseCookie']) {
+        case 'on':
+            on();
+            break;
     
-    case 'off':
-        # code...
-        break;
+        case 'off':
+            off();
+            break;
 
-    default:
-        # code...
-        break;
+        default:
+            # code...
+            break;
 }
-
+}
 function on(){
     //On définit deux cookies
-    setcookie('user_id', '1234');
-    setcookie('user_pref', 'dark_theme', time()+3600*24, '/', '', false, false);
+    setcookie('numclient', $_SERVER['REMOTE_ADDR']);
+    setcookie('expediteur', 'Dylan++');
 }
 
 function off(){
     //On modifie la valeur du cookie user_id
-    setcookie('user_id', '5678');
-    
-    //On supprime le cookie user_pref
-     setcookie('user_pref', '', time()-3600, '/', '', false, false);
+    setcookie('numclient', '');
+    setcookie('expediteur', '');
 }
+
 
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cours PHP & MySQL</title>
+        <title>php</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="cours.css">
     </head>
     
     <body>
-        <h1>Titre principal</h1>
+        <h1>Site cookies Dylan++.php</h1>
         <?php
-            if(isset($_COOKIE['user_id'])){
-                echo 'Votre ID de session est le ' .$_COOKIE['user_id']. '<br>';
-            }
-            if(isset($_COOKIE['user_pref'])){
-                echo 'Votre thème préféré est ' .$_COOKIE['user_pref'];
+            // if(isset($_COOKIE['user_id'])){
+            //     echo 'Votre ID de session est le ' .$_COOKIE['user_id']. '<br>';
+            // }
+            // if(isset($_COOKIE['user_pref'])){
+            //     echo 'Votre thème préféré est ' .$_COOKIE['user_pref'];
+            // }else{
+            //     echo 'Pas de thème préféré défini';
+            // }
+
+            if(isset($_COOKIE['numclient'])){
+                echo 'Votre numclient est : ' .$_COOKIE['numclient']. '<br>';
             }else{
-                echo 'Pas de thème préféré défini';
+                echo 'Pas de coockie Client <br/>';
             }
+            if(isset($_COOKIE['expediteur'])){
+                echo 'Envoyé par ' .$_COOKIE['expediteur'];
+            }else{
+                echo 'Pas de coockie expediteur';
+            }
+
         ?>
-        <p>Choisissez</p>
+        <p>Choisissez :</p>
         <form>
-        <input type="radio" name="chooseCookie" value="on">
-        <input type="radio" name="chooseCookie" value="off">
-        <input type="submit" value="Envoyer">
+        <input type="radio" name="chooseCookie" value="on">On
+        <input type="radio" name="chooseCookie" value="off">Off
+        <br/><br/><input type="submit" value="Envoyer">
+        <br/><br/><br/>
+        <form action="172.16.126.16/cookie"><input type="submit" value="Aller sur la page JS"></form>
         </form>
     </body>
 </html>
