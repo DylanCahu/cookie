@@ -2,16 +2,13 @@
 <head>
 <meta charset="utf-8">
 <title>Cookies</title>
-<style>
-body	{	font-family	:	Arial	;
-		}
-</style>
+
 <script>
 function	envoyer()
 {
 	var saisie = document.getElementsByName("saisie")[0];
-//	var texte  = saisie.value ;
-	var texte  = document.cookie ;
+    var texte  = saisie.value ;
+	//var texte  = document.cookie ;
 	
 	parent.recevoir(texte);
 }
