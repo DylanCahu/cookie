@@ -9,7 +9,7 @@
         <h1>Poste de Dylan++</h1>
         <hr>
 <?php
-//Permet le croisement des cookies
+
 session_set_cookie_params(['samesite' => 'None']);
 session_start();
 

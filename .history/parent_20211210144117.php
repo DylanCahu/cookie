@@ -12,11 +12,7 @@ body	{	font-family	:	Arial	;
     <body>
         <h1>Page parent de Dylan++</h1>
         <hr>
-
 <?php
-
-session_start();
-
 if (isset($_COOKIE['numClient'])) {
     echo "<h3>Votre ID est: " . $_COOKIE['numClient'] . "</br> ";
     $id = $_COOKIE['numClient'];} 

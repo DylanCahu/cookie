@@ -9,10 +9,6 @@
         <h1>Poste de Dylan++</h1>
         <hr>
 <?php
-//Permet le croisement des cookies
-session_set_cookie_params(['samesite' => 'None']);
-session_start();
-
 //génération cookie
 $numClient = rand(0,20) ;
 setcookie("numClient", $numClient, time()+3600, SameSite=None);
