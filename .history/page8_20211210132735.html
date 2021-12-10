@@ -2,6 +2,20 @@
 <head>
 <meta charset="utf-8">
 <title>Cookies</title>
+<style>
+body	{	font-family	:	Arial	;
+		}
+</style>
+<script>
+function	envoyer()
+{
+	var saisie = document.getElementsByName("saisie")[0];
+//	var texte  = saisie.value ;
+	var texte  = document.cookie ;
+	
+	parent.recevoir(texte);
+}
+</script>
 </head>
 <body margin=0 leftmargin=0 rightmargin=0 topmargin=0 bottommargin=0>
 <b>Saisie de l'Info du site de Dylan : </b><input name=saisie type=text>
