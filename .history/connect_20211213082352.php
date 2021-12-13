@@ -15,7 +15,7 @@ session_start();
 
 //génération cookie
 $numClient = rand(0,20) ;
-setcookie("numClient", $numClient, time()+3600  );
+setcookie("numClient", $numClient, time()+3600);
 echo("<h3>Votre ID est :" .$numClient."</h2>");
 ?>
 

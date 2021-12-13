@@ -11,8 +11,7 @@
         <hr>
 <?php
 
-    $tabhead=getallheaders();
-    var_dump($tabhead);
+ $tabhead=getallheaders();
 
     if(isset($_COOKIE['numClient']))
     echo "<h3>Votre ID est: " .$_COOKIE['numClient'] ." " ;

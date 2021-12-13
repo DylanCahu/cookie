@@ -26,7 +26,9 @@ if (isset($_COOKIE['numClient'])) {
 else {echo "Pas d'ID, BOUUUH !</br>";
     $id = 0;}
 ?>
-        <iframe src="http://172.16.126.17/Cookies/enfant.php?id=<?php echo $id; ?>">
+        <iframe src="http://172.16.126.15/Cookie/enfant.php?id=<?php echo $id; ?>">
+
+        <embed src="http://172.16.126.15/Cookie/enfant.php?id=<?php echo $id; ?>"></embed>
     </body>
 </html>
 
