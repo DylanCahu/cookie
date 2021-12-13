@@ -17,12 +17,12 @@ $tabhead = getallheaders();
 var_dump($tabhead);
 
 if (isset($_COOKIE['numClient'])) 
-     echo "<h3>Votre ID cookie est: " . $_COOKIE['numClient'] . "</br> "; 
+    echo "<h3>Votre ID cookie est: " . $_COOKIE['numClient'] . "</br> "; 
 else echo "Pas d'ID cookie sur ce site !</br>";
 
 
-if (isset($_SESSION['numClient'])) 
-     echo "<h3>Votre ID session est: " . $_SESSION['numClient'] . "</br> "; 
+if (isset($_SESSION['numClient'])) {
+    echo "<h3>Votre ID session est: " . $_SESSION['numClient'] . "</br> "; 
 else echo "Pas d'ID session sur ce site !</br>";
 
 

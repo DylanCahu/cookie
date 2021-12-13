@@ -24,11 +24,11 @@ if (isset($_COOKIE['numClient'])) {
     $id = $_COOKIE['numClient'];} else {echo "Pas d'ID cookie sur ce site !</br>";
     $id = 0;}
 if (isset($_SESSION['numClient'])) {
-    echo "<h3>Mon ID session est " . $_SESSION['numClient'] . " </br>";
+    echo "<h3>Mon ID est " . $_SESSION['numClient'] . " </br>";
     $id = $_SESSION['numClient'];} else {echo "Pas d'ID session sur ce site !</br>";
     $id = 0;}
 if (isset($_GET['id'])) {
-    echo "<h3>Votre ID passé en paramètre est " . $_GET['id'] . "</br> ";
+    echo "<h3>Votre ID est " . $_GET['id'] . "</br> ";
     $id = $_GET['id'];} else {echo "Vous n'avez pas passé d'ID!</br>";
     $id = 0;}
 

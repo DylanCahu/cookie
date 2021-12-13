@@ -21,7 +21,7 @@ if (isset($_COOKIE['numClient']))
 else echo "Pas d'ID cookie sur ce site !</br>";
 
 
-if (isset($_SESSION['numClient'])) 
+if (isset($_SESSION['numClient'])) {
      echo "<h3>Votre ID session est: " . $_SESSION['numClient'] . "</br> "; 
 else echo "Pas d'ID session sur ce site !</br>";
 

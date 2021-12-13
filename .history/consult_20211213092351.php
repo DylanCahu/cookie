@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Index Cookies</title>
+        <title>JS</title>
         <meta charset="utf-8">
-        <style>
-            body	{	font-family	:	Arial	;}
-        </style>
+
     </head>
 
     <body>
-        <h1>Page parent de Dylan++</h1>
+        <h1>Poste de Dylan++</h1>
 </br>
 <a href="/Cookies/index.html">Accueil</a>
-<hr>
-
+        <hr>
 <?php
 
 $tabhead = getallheaders();
 var_dump($tabhead);
-
-session_start();
 
 if (isset($_COOKIE['numClient'])) {
     echo "<h3>Votre ID cookie est: " . $_COOKIE['numClient'] . "</br> ";
@@ -32,6 +27,6 @@ if (isset($_SESSION['numClient'])) {
     $id = 0;}
 
 ?>
-        <iframe width=500 height=500  src="http://172.16.126.17/Cookies/enfant.php?id=<?php echo $id; ?>">
+
     </body>
 </html>
