@@ -7,14 +7,11 @@
 
     <body>
         <h1>Poste de Dylan++</h1>
-</br>
-<a href="/Cookies/index.html">Accueil</a>
         <hr>
 <?php
 //Permet le croisement des cookies
-session_set_cookie_params(['samesite' => 'None']);
 session_start();
-
+session_set_cookie_params(['samesite' => 'None']);
 
 
 //génération cookie

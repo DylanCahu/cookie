@@ -27,8 +27,8 @@ session_start();
 //     $id = 0;}
 
 if (isset($_SESSION['numClient'])) {
-    echo "<h3>Votre ID est: " . $_SESSION['numClient'] . "</br> ";
-    $id = $_SESSION['numClient'];} else {echo "Pas d'ID, BOUUUH !</br>";
+    echo "<h3>Votre ID est: " . $_COOKIE['numClient'] . "</br> ";
+    $id = $_COOKIE['numClient'];} else {echo "Pas d'ID, BOUUUH !</br>";
     $id = 0;}
 
 ?>

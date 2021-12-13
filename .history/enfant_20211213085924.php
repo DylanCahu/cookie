@@ -29,7 +29,7 @@ session_start();
 //     $id = 0;}
 
 if (isset($_SESSION['numClient'])) {
-    echo "<h3>Mon ID est: " . $_SESSION['numClient'] . " </br>";
+    echo "<h3>Votre ID est: " . $_SESSION['numClient'] . " </br>";
     $id = $_SESSION['numClient'];} else {echo "Pas d'ID, BOUUUH !</br>";
     $id = 0;}
 if (isset($_GET['id'])) {

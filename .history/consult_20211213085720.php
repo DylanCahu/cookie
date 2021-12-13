@@ -8,8 +8,6 @@
 
     <body>
         <h1>Poste de Dylan++</h1>
-</br>
-<a href="/Cookies/index.html">Accueil</a>
         <hr>
 <?php
 
@@ -23,12 +21,11 @@ var_dump($tabhead);
 //     ;
 // }
 
-session_start();
-
 if (isset($_SESSION['numClient'])) {
     echo "<h3>Votre ID est: " . $_SESSION['numClient'] . " ";
 } else {
-    echo "Pas d'ID, BOUUUH !";
+    echo "Pas d'ID, BOUUUH !"
+    ;
 }
 
 ?>

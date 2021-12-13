@@ -8,8 +8,6 @@
 
     <body>
         <h1>Poste de Dylan++</h1>
-</br>
-<a href="/Cookies/index.html">Accueil</a>
         <hr>
 <?php
 
